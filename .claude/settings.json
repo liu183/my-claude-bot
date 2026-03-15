@@ -1,0 +1,70 @@
+{
+  "project": {
+    "name": "Project Template",
+    "version": "1.0.0",
+    "description": "Standard project structure template"
+  },
+  "rules": {
+    "priority": [
+      "core",
+      "config",
+      "release"
+    ],
+    "enforcement": "strict"
+  },
+  "skills": {
+    "runtimeDiagnosis": {
+      "enabled": true,
+      "description": "统一收集日志、状态和依赖"
+    },
+    "configMigration": {
+      "enabled": true,
+      "description": "配置迁移回滚防污"
+    },
+    "releaseCheck": {
+      "enabled": true,
+      "description": "发布前校验、smoke test"
+    },
+    "incidentTriage": {
+      "enabled": true,
+      "description": "线上故障分诊"
+    }
+  },
+  "agents": {
+    "reviewer": {
+      "enabled": true,
+      "autoTrigger": "pre-commit"
+    },
+    "explorer": {
+      "enabled": true,
+      "autoTrigger": "on-demand"
+    }
+  },
+  "workflows": {
+    "featureDevelopment": [
+      "brainstorming",
+      "design",
+      "TDD",
+      "code-review",
+      "integration"
+    ],
+    "configChange": [
+      "config-migration",
+      "validation",
+      "testing",
+      "deployment"
+    ],
+    "release": [
+      "release-check",
+      "smoke-test",
+      "deployment",
+      "monitoring"
+    ],
+    "incident": [
+      "runtime-diagnosis",
+      "incident-triage",
+      "resolution",
+      "postmortem"
+    ]
+  }
+}
