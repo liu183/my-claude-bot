@@ -1,5 +1,5 @@
 {
-  "last_sent_index": 35,
+  "last_sent_index": 39,
   "sent_dates": [
     {
       "date": "2026-05-11",
@@ -44,6 +44,11 @@
     {
       "date": "2026-05-18",
       "chapters": "33-36",
+      "count": 4
+    },
+    {
+      "date": "2026-05-19",
+      "chapters": "37-40",
       "count": 4
     }
   ]
